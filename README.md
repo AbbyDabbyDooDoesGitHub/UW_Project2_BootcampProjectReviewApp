@@ -1,11 +1,19 @@
 # UW_Project2_BootcampProjectReviewApp
 
+## Abby
+- html all project view
 
+## Ryan
+- html project entry form
+
+## Gi
+
+## Jocelyn
 
 
 ### Project To-Do List
 - html bones 
-  - pages: project entry pages, all project view, log in page
+  - pages: project entry pages, all project view, log in page/create log in
   - utilize materialize with html layout
 - log in required to enter submission, no log in needed to view
   - auth/cookies
