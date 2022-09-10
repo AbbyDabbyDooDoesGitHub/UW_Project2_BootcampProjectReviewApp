@@ -1,6 +1,55 @@
-# UW_Project2_BootcampProjectSubmissionApp
+# UW_Project2_BootcampProjectReviewApp
+
+## Abby
+- html all project view
+
+## Ryan
+- html project entry form
+
+## Gi
+
+## Jocelyn
+
+
+### Project To-Do List
+- html bones 
+  - pages: project entry pages, all project view, log in page/create log in
+  - utilize materialize with html layout
+- log in required to enter submission, no log in needed to view
+  - auth/cookies
+- add in dynamic scripting for interactive buttons/etc
+- add db saving info w/ mySQL/Sequelize
+- craft models for project and user
+- add GET and POST routes
+  - GET a project or all projects
+  - POST add a project
+
+#### Once app is functioning
+- Update ReadME with SS, new info, app link, etc
+- double check code formatting for best practice layouts
+- ensure a clean UI experience
+
+
+#### Req's to meet
+* Node.js and Express.js to create a RESTful API
+* Handlebars.js as the template engine
+* MySQL and Sequelize ORM for the db
+* have GET and POST routes for retrieving and adding new data
+* folder structure meets MVC paradigm
+* Include authentication (express-session and cookies)
+* Protect API keys and sensitive information with environment variables
+* deploy using Heroku (with data)
+* accept and respond to user input
+
+#### Req's assumed to be met
+* at least one new library, package, or technology --> MATERIALIZE FRAMEWORK
+* code formatting
+* README
+* polished UI
+
+
 ## Overview
-Voting on the "Peoples Choice Awards" for the Bootcamp projects was a fun way to cap off the project, but seeing so many consecutive projects can blur projects together and make it hard to remember what each one was. It would be useful to be able to integrate basic descriptions, user stories, and screenshots into a thumbnail-like reference that makes voting easy to do without a key. The app will allow users to create/submit projects to vote on, and it will also host the voting for the awards to incorporate that reference material into the experience. 
+Voting on the "Peoples Choice Awards" for the Bootcamp projects was a fun way to cap off the project, but seeing so many consecutive projects can blur projects together and make it hard to remember what each one was. It would be useful to be able to integrate basic descriptions, user stories, and screenshots into a thumbnail-like reference that makes voting easy to do without a key. The app will allow users to create/submit projects for reference. 
 
 Link to Web App: <!-- LINK TO DEPLOYMENT HERE -->
 
