@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS voting_db;
+
+CREATE DATABASE voting_db;
