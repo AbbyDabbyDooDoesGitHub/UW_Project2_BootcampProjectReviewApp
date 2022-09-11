@@ -2,7 +2,7 @@
 
 
 
-// $(img).css("height", $(text).outerHeight());
+// RESIZE CARD TEXT HEIGHT STUFF
 resizeCardText("0");
 
 function resizeCardText(groupNum) {
@@ -15,27 +15,5 @@ function resizeCardText(groupNum) {
 };
 
 window.onresize = function() {
-    $(img).css("height", $(text).maxHeight());
+    resizeCardText("0");
 };
-
-
-
-// setScrollHeight("0");
-
-// function setScrollHeight(groupNum) {
-//     var card = "#project-card_group" + groupNum;
-//     var text = "#card-content_group" + groupNum;
-
-//     $(card).find('img').css("height", $(text).outerHeight());
-
-//     var $img = $(card).find('img');
-
-//     $img.on('load', function() {
-//         $(card).find('img').css("height", $(text).outerHeight());
-//     });
-
-//     window.onresize = function() {
-//         $(card).find('img').css("height", $(text).outerHeight());
-//     }
-
-// }
