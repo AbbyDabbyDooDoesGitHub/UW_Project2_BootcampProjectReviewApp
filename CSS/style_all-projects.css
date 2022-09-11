@@ -1,0 +1,52 @@
+/* MISC GENERAL FORMATTING ---------------------------------------------------- */
+/* HEADER */
+header {
+  background-image: linear-gradient(to right, rgb(65, 133, 197) , rgb(23, 9, 73));
+  font-size: 35px;
+  color: aliceblue;
+  padding: 15px;
+  text-align: center;
+  font-weight: bolder;
+  width: 100vw;
+}
+
+/* EVERYTHING BELOW THE HEADER */
+#main-display {
+  display:inline-flex;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+
+/* LEFT SIDE BELOW HEADER */
+#left-side-display {
+  width: 35%;
+  min-width: 260px;
+  padding: 10px;
+}
+
+/* RIGHT SIDE BELOW HEADER */
+#right-side-display {
+  width: 65%;
+  padding: 10px;
+}
+
+.card-content {
+  overflow-y:scroll;
+  border: 1px solid black;
+}
+
+h3 {
+  padding-top: 5px;
+  margin: 0;
+}
+
+.card-stacked {
+  padding: 10px;
+}
+
+.card.horizontal .card-stacked .card-content {
+  margin:0;
+  padding:0;
+}
+
