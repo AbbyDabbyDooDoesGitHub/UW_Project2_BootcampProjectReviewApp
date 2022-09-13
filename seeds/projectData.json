@@ -6,7 +6,7 @@
     "preview": "./Images/MyPortfolioScreenShot.png",
     "repoLink": "https://github.com/AbbyDabbyDooDoesGitHub/UW_ChWk02_MyProfessionalPortfolio",
     "appLink": "https://abbydabbydoodoesgithub.github.io/UW_ChWk02_MyProfessionalPortfolio/",
-    "user_id": 1,
+    "user_id": 1
   },
   {
     "groupNumber": 2,
@@ -15,7 +15,7 @@
     "preview": "./Images/Accessibility_Screenshot.PNG",
     "repoLink": "https://github.com/AbbyDabbyDooDoesGitHub/UW_ChWk01_WebAccessibilityFeatures",
     "appLink": "https://abbydabbydoodoesgithub.github.io/UW_ChWk01_WebAccessibilityFeatures/",
-    "user_id": 2,
+    "user_id": 2
   },
   {
     "groupNumber": 3,
@@ -24,6 +24,6 @@
     "preview": "./Images/PasswordGen_Screenshot.png",
     "repoLink": "https://github.com/AbbyDabbyDooDoesGitHub/UW_ChWk03_PasswordGenerator",
     "appLink": "https://abbydabbydoodoesgithub.github.io/UW_ChWk03_PasswordGenerator/",
-    "user_id": 3,
+    "user_id": 3
   }
 ]
