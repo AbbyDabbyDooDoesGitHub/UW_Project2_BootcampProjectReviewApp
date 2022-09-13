@@ -32,7 +32,7 @@ Project.init(
       allowNull: false
         // add a validator for URL
     },
-    userId: {
+    user_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'user',
