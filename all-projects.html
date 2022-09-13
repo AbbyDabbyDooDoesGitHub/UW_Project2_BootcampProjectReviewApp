@@ -7,10 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- REPLACE W/NEW PROJECT TAB TITLE -->
-    <title>New Project</title>
-
-    <!-- LINK BOOTSTAP FRAMEWORK -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+    <title>Project Directory</title>
 
     <!-- LINK MATERIALIZE FRAMEWORK -->
     <link
@@ -30,14 +27,99 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet"> -->
 
     <!-- LINK RESET AND MAIN STYLESHEET -->
-    <link rel="stylesheet" href="./Assets/CSS/reset.css">
-    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style_all-projects.css" />
 
   </head>
 
   <body>
     <!-- EXAMPLE OF A LINK TO SOMEWHERE IN THE DOCUMENT -->
     <!-- <a href="#Contact_Me">Contact Me</a> -->
+
+    <header>
+      <h1>Bootcamp Project Directory</h1>
+    </header>
+
+    <div id="main-display">
+
+      <div id="left-side-display">
+        <div id="navigation-div">
+          <h2>Navigate to a Project</h2>
+
+          <div id="navigation-links-div">
+            <ul class="navigation-links">
+              <a id="nav-link_group0" href="#project-card_group0">0</a>
+            </ul> 
+            <ul class="navigation-links">
+              <a id="nav-link_group1" href="#project-card_group1">Group 1: Project blah blah Title</a>
+            </ul> 
+
+          </div>
+
+        </div>
+      </div>
+  
+      <div id="right-side-display">
+
+        <div class="project-card" id="project-card_group0">
+          <div class="card horizontal">
+            <div class="card-image">
+              <img id="project-img_group0" src="./Images/MyPortfolioScreenShot.png">
+            </div>
+
+            <div class="card-stacked" id="card-content-div_group0">
+              <h3>Project Name</h3>
+              <div class="card-content">
+                <p>Project by Group 0</p>
+                <br>
+                <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+                <p>AS A<br>I WANT<br>SO THAT</p>
+                <p>AS A<br>I WANT<br>SO THAT</p>
+                <p>AS A<br>I WANT<br>SO THAT</p>
+              </div>
+
+              <div class="card-action">
+                <a href="#">Git Repo</a>
+                <a href="#">App Link</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="project-card" id="project-card_group1">
+          <div class="card horizontal">
+            <div class="card-image">
+              <img id="project-img_group1" src="./Images/Accessibility_Screenshot.PNG">
+            </div>
+
+            <div class="card-stacked" id="card-content-div_group1">
+              <h3>Other Project Name</h3>
+              <div class="card-content">
+                <p>Project by Group 1</p>
+                <br>
+                <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</p>
+                <p>AS A<br>I WANT<br>SO THAT</p>
+                <p>AS A<br>I WANT<br>SO THAT</p>
+                <p>AS A<br>I WANT<br>SO THAT</p>
+              </div>
+
+              <div class="card-action">
+                <a href="#">Git Repo</a>
+                <a href="#">App Link</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
 
 
 
@@ -55,10 +137,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <!-- LINK MAIN JAVASCRIPT -->
-    <script type="text/javascript" src="./Assets/JS/script.js"></script>
-
-    <!-- LINK OPTIONAL START JS -->
-    <!-- <script src="./Assets/JS/start.js"></script> -->
+    <script type="text/javascript" src="./JS/script_all-projects.js"></script>
     
   </body>
 

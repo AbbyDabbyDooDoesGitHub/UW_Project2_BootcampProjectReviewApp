@@ -1,0 +1,111 @@
+/* MISC GENERAL FORMATTING ---------------------------------------------------- */
+/* HEADER */
+header {
+  background-image: linear-gradient(to right, rgb(65, 133, 197) , rgb(23, 9, 73));
+  font-size: 35px;
+  color: aliceblue;
+  padding: 15px;
+  text-align: center;
+  font-weight: bolder;
+  width: 100vw;
+}
+
+/* EVERYTHING BELOW THE HEADER */
+#main-display {
+  display:inline-flex;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+
+/* LEFT SIDE BELOW HEADER */
+#left-side-display {
+  width: 25%;
+  min-width: 260px;
+  padding: 10px;
+}
+
+/* RIGHT SIDE BELOW HEADER */
+#right-side-display {
+  width: 75%;
+  padding: 10px;
+}
+
+#navigation-div {
+  margin-top: 7px;
+  background-color: #ffd180;
+  padding: 5px;
+  border-radius: 10px;
+  width:100%;
+}
+
+#navigation-links-div {
+  display:contents;
+  width:100%;
+}
+
+.navigation-links {
+  background-color: antiquewhite;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.navigation-links a {
+  background-color: blue;
+  padding: 5px;
+  font-size: 16px;
+  color: black;
+  width: 100%;
+  box-sizing: 100%;
+  /* width: 300px; */
+}
+
+h2 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin: 0;
+  font-size: 25px;
+}
+
+.card-content {
+  overflow-y:scroll;
+  /* border: 1px solid rgb(0, 0, 0, .2); */
+}
+
+.card.horizontal .card-stacked .card-content {
+  margin:0;
+  padding:5px;
+  padding-left: 0;
+
+  color: rgba(122, 122, 122);
+}
+
+h3 {
+  padding-top: 5px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-stacked {
+  padding: 10px;
+}
+
+.card-action {
+  margin:0;
+  margin-top: 5px;
+  padding:5px;
+  padding-left: 0;
+
+}
+
+.card .card-action {
+  display:inline-flex;
+  margin:0;
+  padding:0;
+  padding-top: 10px;
+
+  border-top: 1px solid rgba(160,160,160,0.2);
+  position: relative;
+}
+

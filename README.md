@@ -9,6 +9,7 @@
 ## Gi
 
 ## Jocelyn
+- user log in / account sign up
 
 
 ### Project To-Do List
