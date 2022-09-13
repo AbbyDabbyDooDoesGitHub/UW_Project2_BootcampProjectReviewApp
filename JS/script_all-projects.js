@@ -5,8 +5,8 @@
 // RESIZE CARD TEXT HEIGHT STUFF
 resizeCardText("0");
 resizeCardText("1");
-resizeNavLinkWidth("0");
-resizeNavLinkWidth("1");
+// resizeNavLinkWidth("0");
+// resizeNavLinkWidth("1");
 
 window.onresize = function() {
     resizeCardText("0");
@@ -22,15 +22,15 @@ function resizeCardText(groupNum) {
     $(textDiv).css("height",imgH);
 };
 
-// function resizeNavLinkWidth(groupNum) {
-//     var linkDiv = "#navigation-links-div";
-//     var link    = "#nav-link_group" + groupNum;
+function resizeNavLinkWidth(groupNum) {
+    var linkDiv = "#navigation-links-div";
+    var link    = "#nav-link_group" + groupNum;
 
-//     divW   = $(linkDiv).css("width");
-//     linkW  = $(link).css("width");
-//     newPad = divW - linkW;
+    divW   = $(linkDiv).css("width");
+    linkW  = $(link).css("width");
+    newPad = divW - linkW;
 
     
-//     $(link).css("padding-right", linkW);
-// };
+    $(link).css("padding-right", linkW);
+};
 
