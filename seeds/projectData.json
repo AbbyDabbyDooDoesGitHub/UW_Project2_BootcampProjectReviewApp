@@ -1,17 +1,29 @@
 [
   {
-    "name": "Flour",
-    "userstory": "` lb`",
-    "user_id": 1
+    "groupNumber": 1,
+    "projectName": "Professional Portfolio",
+    "userStory": "AS AN employer\nI WANT to view a potential employee's deployed portfolio of work samples\nSO THAT I can review samples of their work and assess whether they're a good candidate for an open position",
+    "preview": "./Images/MyPortfolioScreenShot.png",
+    "repoLink": "https://github.com/AbbyDabbyDooDoesGitHub/UW_ChWk02_MyProfessionalPortfolio",
+    "appLink": "https://abbydabbydoodoesgithub.github.io/UW_ChWk02_MyProfessionalPortfolio/",
+    "userId": 1,
   },
   {
-    "name": "Apples",
-    "quantity": "10",
-    "user_id": 1
+    "groupNumber": 2,
+    "projectName": "Web Accessibility Features",
+    "userStory": "AS A marketing agency\nI WANT a codebase that follows accessibility standards\nSO THAT our own site is optimized for search engines",
+    "preview": "./Images/Accessibility_Screenshot.PNG",
+    "repoLink": "https://github.com/AbbyDabbyDooDoesGitHub/UW_ChWk01_WebAccessibilityFeatures",
+    "appLink": "https://abbydabbydoodoesgithub.github.io/UW_ChWk01_WebAccessibilityFeatures/",
+    "userId": 2,
   },
   {
-    "name": "Sugar",
-    "quantity": "12 cups",
-    "user_id": 2
+    "groupNumber": 3,
+    "projectName": "Password Generator",
+    "userStory": "AS AN employee with access to sensitive data\nI WANT to randomly generate a password that meets certain criteria\nSO THAT I can create a strong password that provides greater security",
+    "preview": "./Images/PasswordGen_Screenshot.png",
+    "repoLink": "https://github.com/AbbyDabbyDooDoesGitHub/UW_ChWk03_PasswordGenerator",
+    "appLink": "https://abbydabbydoodoesgithub.github.io/UW_ChWk03_PasswordGenerator/",
+    "userId": 3,
   }
 ]

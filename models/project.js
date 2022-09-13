@@ -5,11 +5,15 @@ class Project extends Model {}
 
 Project.init(
   {
-    name: {
+    groupNumber: {
       type: DataTypes.STRING(100),
       allowNull: false
     },
-    userstory: {
+    projectName: {
+      type: DataTypes.STRING(100),
+      allowNull: false
+    },
+    userStory: {
       type: DataTypes.TEXT,
       allowNull: false
     },
@@ -28,7 +32,7 @@ Project.init(
       allowNull: false
         // add a validator for URL
     },
-    user_id: {
+    userId: {
       type: DataTypes.INTEGER,
       references: {
         model: 'user',
