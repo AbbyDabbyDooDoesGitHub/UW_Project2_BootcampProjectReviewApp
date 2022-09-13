@@ -22,15 +22,15 @@ function resizeCardText(groupNum) {
     $(textDiv).css("height",imgH);
 };
 
-function resizeNavLinkWidth(groupNum) {
-    var linkDiv = "#navigation-links-div";
-    var link    = "#nav-link_group" + groupNum;
+// function resizeNavLinkWidth(groupNum) {
+//     var linkDiv = "#navigation-links-div";
+//     var link    = "#nav-link_group" + groupNum;
 
-    divW   = $(linkDiv).css("width");
-    linkW  = $(link).css("width");
-    newPad = divW - linkW;
+//     divW   = $(linkDiv).css("width");
+//     linkW  = $(link).css("width");
+//     newPad = divW - linkW;
 
     
-    $(link).css("padding-right", linkW);
-};
+//     $(link).css("padding-right", linkW);
+// };
 
