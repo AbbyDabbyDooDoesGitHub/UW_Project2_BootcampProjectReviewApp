@@ -35,6 +35,15 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+router.get('/signup', (req, res) => {
+  // TODO: Add a comment describing the functionality of this if statement
+  if (req.session.signed_in) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('signup');
+});
 module.exports = router;
 
 
