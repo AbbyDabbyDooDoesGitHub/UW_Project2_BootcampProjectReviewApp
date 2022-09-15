@@ -1,21 +1,37 @@
 /* MISC GENERAL FORMATTING ---------------------------------------------------- */
 /* HEADER */
 header {
-  background-image: linear-gradient(to right, rgb(65, 133, 197) , rgb(23, 9, 73));
+  background-image: linear-gradient(#333533, #333533, #333533, #202020);
   font-size: 35px;
-  color: aliceblue;
+  color: #d6d6d6;
+  /* color: #FFD100;
+  color: #B75D69; */
   padding: 15px;
+  padding-top: 25px;
   text-align: center;
-  font-weight: bolder;
+  font-weight: bold;
   width: 100vw;
 }
 
+h1 {
+  margin:0;
+  
+  padding: 0;
+}
+
 /* EVERYTHING BELOW THE HEADER */
+body {
+  background-color: #d6d6d6;
+  background-size: 100%;
+ } 
+
 #main-display {
   display:inline-flex;
   padding: 0;
   margin: 0;
   width: 100vw;
+
+  /* background-color: #d6d6d6; */
 }
 
 /* LEFT SIDE BELOW HEADER */
@@ -32,10 +48,11 @@ header {
 }
 
 #navigation-div {
-  margin-top: 7px;
-  background-color: #ffd180;
+  margin-top: 8px;
+  color: #202020;
+  background-color: #b75d69a6;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 2px;
   width:100%;
 }
 
@@ -45,20 +62,27 @@ header {
 }
 
 .navigation-links {
-  background-color: antiquewhite;
   margin-bottom: 5px;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
-.navigation-links a {
+.navigation-links:hover {
+  background-color: #ffda37e6;
+}
+
+.navigation-links p {
   /* background-color: blue; */
   padding: 5px;
   font-size: 16px;
-  color: black;
+  color: #333533;
   width: 100%;
-  box-sizing: 100%;
   /* width: 300px; */
+}
+
+ul.navigation-links {
+  margin:0;
+  padding:0;
 }
 
 h2 {
@@ -79,12 +103,14 @@ h2 {
   padding-left: 0;
 
   color: rgba(122, 122, 122);
+  
 }
 
 h3 {
   padding-top: 5px;
   margin: 0;
   font-size: 18px;
+  color: #202020;
 }
 
 .card-stacked {
@@ -105,10 +131,12 @@ h3 {
   padding:0;
   padding-top: 10px;
 
-  border-top: 1px solid rgba(160,160,160,0.2);
+  border-top: 1px solid #33353323;
   position: relative;
 }
-.container {
-  margin: 0 auto;
-  outline: solid 1px black;
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: #B75D69;
+
 }
+
