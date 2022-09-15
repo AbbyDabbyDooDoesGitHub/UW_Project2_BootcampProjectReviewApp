@@ -1,26 +1,30 @@
 # UW_Project2_BootcampProjectReviewApp
 
 ## Abby
-- html all project view
+- html all project view - left side trouble shoot
+- parse out how to get screenshots uploaded
 
 ## Ryan
 - html project entry form
 
 ## Gi
+- get seeds tested and make sure models are correct
 
 ## Jocelyn
-- user log in / account sign up
+- user log in / account sign up - css -ect
 
 
 ### Project To-Do List
 - html bones 
-  - pages: project entry pages, all project view, log in page/create log in
-  - utilize materialize with html layout
+  - pages: project entry pages, log in page/create log in
 - log in required to enter submission, no log in needed to view
   - auth/cookies
 - add in dynamic scripting for interactive buttons/etc
 - add db saving info w/ mySQL/Sequelize
 - craft models for project and user
+- find upload method for pics
+- connect all html docs w/eachother
+- connect data w/ html docs
 - add GET and POST routes
   - GET a project or all projects
   - POST add a project

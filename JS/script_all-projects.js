@@ -5,8 +5,8 @@
 // RESIZE CARD TEXT HEIGHT STUFF
 resizeCardText("0");
 resizeCardText("1");
-resizeNavLinkWidth("0");
-resizeNavLinkWidth("1");
+// resizeNavLinkWidth("0");
+// resizeNavLinkWidth("1");
 
 window.onresize = function() {
     resizeCardText("0");
