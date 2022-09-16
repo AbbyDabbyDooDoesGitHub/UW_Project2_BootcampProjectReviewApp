@@ -33,11 +33,35 @@ router.get("/submission", (req, res) => {
 });
 
 // Route "/dashboard"
+router.get("/dashboard", (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect("/");
+    return;
+  }
+});
 
 // Route "/dashboard/new"
+router.get("/dashboard/new", (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect("/");
+    return;
+  }
+});
 
 // Route "/dashboard/edit/:id"
+router.get("/dashboard/edit/:id", (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect("/");
+    return;
+  }
+});
 
 // Route "/post/:id"
+router.get("/post/:id", (req, res) => {
+  if (req.session.logged_in) {
+    res.redirect("/");
+    return;
+  }
+});
 
 module.exports = router;
