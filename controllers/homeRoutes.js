@@ -20,11 +20,15 @@ router.get("/login", (req, res) => {
     return;
   }
 
-  res.render("login");
+  res.render("login", {
+    logged_in: req.session.logged_in,
+  });
 });
 
 router.get("/submission", withAuth, (req, res) => {
-  res.render("submission");
+  res.render("submission", {
+    logged_in: req.session.logged_in,
+  });
 });
 
 router.get("/signup", (req, res) => {
@@ -33,6 +37,8 @@ router.get("/signup", (req, res) => {
     return;
   }
 
-  res.render("signup");
+  res.render("signup", {
+    logged_in: req.session.logged_in,
+  });
 });
 module.exports = router;
