@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const { Project } = require("../../models");
 
-// Route "/"
+// CREATE a project
 router.post("/", async (req, res) => {
   try {
     const newProject = await Project.create({
@@ -15,6 +15,7 @@ router.post("/", async (req, res) => {
   }
 });
 
+// DELETE a project
 router.delete("/:id", async (req, res) => {
   try {
     const projectData = await Project.destroy({
