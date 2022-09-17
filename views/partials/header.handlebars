@@ -1,0 +1,16 @@
+<header>
+  <h1>Bootcamp Project Directory</h1>
+  <nav>
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <!-- Need link to login -->
+        {{#if logged_in}}
+          <li><button class="btn" id="logout">logout</button></li>
+          <li><a href="/submission">Add a Project</a></li>
+        {{else}}
+          <li><a href="/login">Login</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
+</header>
