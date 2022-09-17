@@ -115,11 +115,10 @@ Use this [project presentation template](https://docs.google.com/presentation/d/
 
 ### Technology
 - [jQuery Library](https://jquery.com/)
-<!-- 
+
 ### Media
-- 11d icon (thunderstorm): [lightning cloudy by reynaindra from NounProject.com](https://thenounproject.com/browse/icons/term/lightning-cloudy/") -->
-
-
+- Full icon: [Inbox by Gregor Cresnar from Noun Project](https://thenounproject.com/icon/inbox-4624894/)
+- Empty icon: [Empty by Gregor Cresnar from Noun Project](https://thenounproject.com/icon/empty-4670062/)
 
 
 <!-- # 15 Project 2: Interactive Full-Stack Application
