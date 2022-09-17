@@ -1,18 +1,23 @@
-
-<!-- EXAMPLE OF A LINK TO SOMEWHERE IN THE DOCUMENT -->
-<!-- <a href="#Contact_Me">Contact Me</a> -->
-
 {{>header}}
 
 <div id="main-display">
+
   <div id="left-side-display">
     <div id="navigation-div">
       <h2>Navigate to a Project</h2>
+
+      <div id="navigation-links-div">
+        {{!-- add route --}}
+        {{>navigationLinks}} 
+      </div>
     </div>
   </div>
-{{>projectCards}}
+
+  <div id="right-side-display">
+    {{>projectCards}}
   </div>
+
 </div>
 
 <!-- LINK MAIN JAVASCRIPT -->
-<script type="text/javascript" src="./JS/script_all-projects.js"></script>
+<script type="text/javascript" src="/public/js/script_all-projects.js"></script>
