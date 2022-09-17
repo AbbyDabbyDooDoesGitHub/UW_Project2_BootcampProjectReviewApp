@@ -27,38 +27,6 @@ router.get("/submission", withAuth, (req, res) => {
   res.render("submission");
 });
 
-// Route "/dashboard"
-router.get("/dashboard", (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect("/");
-    return;
-  }
-});
-
-// Route "/dashboard/new"
-router.get("/dashboard/new", (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect("/");
-    return;
-  }
-});
-
-// Route "/dashboard/edit/:id"
-router.get("/dashboard/edit/:id", (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect("/");
-    return;
-  }
-});
-
-// Route "/post/:id"
-router.get("/post/:id", (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect("/");
-    return;
-  }
-});
-
 router.get("/signup", (req, res) => {
   if (req.session.signed_in) {
     res.redirect("/");
