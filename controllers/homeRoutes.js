@@ -1,11 +1,9 @@
 const router = require("express").Router();
-const { User } = require("../models");
+const { Project } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
-  const userData = await User.findAll({
-    attributes: { exclude: ["password"] },
-  });
+  const userData = await Project.findAll({});
 
   const users = userData.map((project) => project.get({ plain: true }));
 
@@ -25,11 +23,8 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
-router.get("/submission", (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect("/");
-    return;
-  }
+router.get("/submission", withAuth, (req, res) => {
+  res.render("submission");
 });
 
 // Route "/dashboard"
