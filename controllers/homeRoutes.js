@@ -1,11 +1,9 @@
 const router = require("express").Router();
-const { User } = require("../models");
+const { Project } = require("../models");
 const withAuth = require("../utils/auth");
 
-router.get("/", withAuth, async (req, res) => {
-  const userData = await User.findAll({
-    attributes: { exclude: ["password"] },
-  });
+router.get("/", async (req, res) => {
+  const userData = await Project.findAll({});
 
   const users = userData.map((project) => project.get({ plain: true }));
 
@@ -24,18 +22,17 @@ router.get("/login", (req, res) => {
 
   res.render("login");
 });
-// router.get("/submission", (req, res) => {
-//     if (req.session.logged_in) {
-//       res.redirect("/");
-//       return;
-//     }
 
-// Route "/dashboard"
+router.get("/submission", withAuth, (req, res) => {
+  res.render("submission");
+});
 
-// Route "/dashboard/new"
+router.get("/signup", (req, res) => {
+  if (req.session.signed_in) {
+    res.redirect("/");
+    return;
+  }
 
-// Route "/dashboard/edit/:id"
-
-// Route "/post/:id"
-
+  res.render("signup");
+});
 module.exports = router;
