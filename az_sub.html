@@ -6,7 +6,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
     <link rel="stylesheet" href="./CSS/reset.css">
-    <link rel="stylesheet" href="./CSS/style_all-projects.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- LINK RESET AND MAIN STYLESHEET -->
@@ -31,7 +31,7 @@
 
 
     <div class="container">
-      <div class="row">
+      <div class="row" id="sub-pg-contents">
           <form class="col s12">
 
             <div class="row">
@@ -94,12 +94,15 @@
             </div>
 
 
-            <div class="row">
+            <div class="row" id="previewSub-div">
               <button class="btn waves-effect waves-light" type="submit" name="action">Upload App Screenshot</button>
 
-              <img src="./Images/Icon_Empty.png" alt="Icon is Empty by Gregor Cresnar from the Noun Project"></img>
+              <div id="iconDiv">
+                <img id="preview-ConfirmationIcon" src="./Images/Icon_Empty.png" alt="Icon is Empty by Gregor Cresnar from the Noun Project"></img>
 
-              <p id="imageSubmissionText">no image submitted</p>
+              </div>
+
+              <p id="preview-ConfirmationText">no image submitted</p>
 
               <!-- <button class="btn waves-effect waves-light" type="submit" name="action">Submit Project to Directory
                  <i class="material-icons ">send</i> 

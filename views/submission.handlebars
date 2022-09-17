@@ -1,72 +1,161 @@
-{{! <!DOCTYPE html>
-<html>
-  <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
-    <link rel="stylesheet" href="./CSS/reset.css">
-    <link rel="stylesheet" href="./CSS/style_all-projects.css" />
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Project Submission</title>
-  </head> }}
+<header>
+  <h1>Project Submission</h1>
+</header>
 
-<h2>Project Submission</h2>
+<!-- "groupNumber": 2,
+"projectName": "Web Accessibility Features",
+"userStory": "AS A marketing agency\nI WANT a codebase that follows accessibility standards\nSO THAT our own site is optimized for search engines",
+"preview": "./Images/Accessibility_Screenshot.PNG",
+"repoLink": "https://github.com/AbbyDabbyDooDoesGitHub/UW_ChWk01_WebAccessibilityFeatures",
+"appLink": "https://abbydabbydoodoesgithub.github.io/UW_ChWk01_WebAccessibilityFeatures/",
+"user_id": 2 -->
 
-<form class="form submit-form">
-  <div class="form-group">
-    <label for="groupNumber-submit">group number:</label>
-    <input class="form-input" type="text" id="groupNumber-submit" />
-  </div>
-  <div class="form-group">
-    <label for="projectName-submit">project name:</label>
-    <input class="form-input" type="text" id="projectName-submit" />
-  </div>
-  <div class="form-group">
-    <label for="userStory-submit">brief user story:</label>
-    <input class="form-input" type="text" id="userStory-submit" />
-  </div>
-  <div class="form-group">
-    <label for="preview-submit">preview:</label>
-    <input class="form-input" type="url" id="preview-submit" />
-  </div>
-  <div class="form-group">
-    <label for="repoLink-submit">repo link:</label>
-    <input class="form-input" type="url" id="repoLink-submit" />
-  </div>
-  <div class="form-group">
-    <label for="appLink-submit">app link:</label>
-    <input class="form-input" type="text" id="appLink-submit" />
-  </div>
-  {{! <div class="row">
-              <form action="#">
-                <div class="file-field input-field">
-                  <div class="btn">
-                    <span>File</span>
-                    <input type="file" multiple>
-                  </div>
-                  <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text" placeholder="Upload one or more screenshots">
-                  </div>
-                </div>
-              </form>
-            </div> }}
-  <div class="form-group">
-    <button class="btn btn-primary" type="submit">submit</button>
-  </div>
-</form>
 
-<script src="/js/submission.js"></script>
+<div class="container">
+  <div class="row" id="sub-pg-contents">
+      <form class="col s12">
 
-{{! <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-          <i class="material-icons ">send</i>
-        </button> }}
+        <div class="row">
+          <div class="input-field col s3">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">Group #</label>
+          </div>
+          <div class="input-field col s9">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Project Name</label>
+          </div>
+        </div>
 
-<!--JavaScript at end of body for optimized loading-->
-{{! <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  </body>
-</html> }}
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="user_story" type="text" class="validate">
+            <label for="user_story">Brief App Description (optional)</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s3">
+            <h2>User Story: AS A</h2>
+          </div>
+          <div class="input-field col s9">
+            <input id="user_story" type="text" class="validate">
+            <label for="user_story">student using this app</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s3">
+            <h2>User Story: I WANT</h2>
+          </div>
+          <div class="input-field col s9">
+            <input id="user_story" type="text" class="validate">
+            <label for="user_story">to complete these sentences for my project</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s3">
+            <h2>User Story: SO THAT</h2>
+          </div>
+          <div class="input-field col s9">
+            <input id="user_story" type="text" class="validate">
+            <label for="user_story">my app's user story appears in the directory</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">Git Repo URL<Link></Link></label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Web App URL</label>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <button class="btn waves-effect waves-light" id="upload_widget" type="submit" name="action">Upload App Screenshot</button>
+
+          <script src=“https://upload-widget.cloudinary.com/global/all.js” type=“text/javascript”></script>
+
+          <script type="text/javascript" >
+            function showUploadWidget() {
+              cloudinary.openUploadWidget({
+                  cloudName: "dyxcfsiex",
+                  uploadPreset: "ar_4:3",
+                  sources: [
+                      "local",
+                      "url",
+                      "google_drive",
+                      "dropbox"
+                  ],
+                  googleApiKey: "<image_search_google_api_key>",
+                  showAdvancedOptions: true,
+                  cropping: true,
+                  multiple: false,
+                  defaultSource: "local",
+                  styles: {
+                      palette: {
+                          window: "#333533",
+                          sourceBg: "#202020",
+                          windowBorder: "#D6D6D6",
+                          tabIcon: "#E46E7D",
+                          inactiveTabIcon: "#B75D69",
+                          menuIcons: "#E46E7D",
+                          link: "#FFDA37",
+                          action: "#FFDA37",
+                          inProgress: "#D6D6D6",
+                          complete: "#E46E7D",
+                          error: "#FF0028",
+                          textDark: "#202020",
+                          textLight: "#D6D6D6"
+                      },
+                      fonts: {
+                          default: null,
+                          "'Fira Sans', sans-serif": {
+                              url: "https://fonts.googleapis.com/css?family=Fira+Sans",
+                              active: true
+                          }
+                      }
+                  }
+              },
+              (err, info) => {
+                if (!err) {    
+                  console.log("Upload Widget event - ", info);
+                }
+                });
+              }
+
+          document.getElementById(“upload_widget”).addEventListener(“click”, function () {
+                        myWidget.open();
+                    }, false);
+          
+          </script>
+
+          <img src="./Images/Icon_Empty.png" alt="Icon is Empty by Gregor Cresnar from the Noun Project"></img>
+
+          <p id="imageSubmissionText">no image submitted</p>
+
+          <!-- <button class="btn waves-effect waves-light" type="submit" name="action">Submit Project to Directory
+              <i class="material-icons ">send</i> 
+          </button> -->
+
+        </div>
+
+        <div class="row">
+          <!-- <button class="btn waves-effect waves-light" type="submit" name="action">Upload App Screenshot</button> -->
+
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit Project to Directory
+          </button>
+
+        </div>
+
+
+      </form>
+    </div>
+</div>        
+
+

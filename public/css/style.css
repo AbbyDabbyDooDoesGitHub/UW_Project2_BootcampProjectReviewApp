@@ -138,3 +138,42 @@ h3 {
 
 }
 
+
+
+/* SUB PAGE CSS STUFF ------------------------------ */
+#sub-pg-contents h2 {
+  font-size: 18px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+#previewSub-div {
+  display: inline-flex;
+}
+
+#preview-ConfirmationIcon {
+  height: 40px;
+  padding: 7px;
+}
+
+#iconDiv {
+  background-color: #B75D69;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+#preview-ConfirmationText {
+  height: 100%;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: bold;
+  /* padding-top: 40px; */
+  position: relative;
+  bottom: 8px;
+  
+  /* background-color: #B75D69; */
+}
