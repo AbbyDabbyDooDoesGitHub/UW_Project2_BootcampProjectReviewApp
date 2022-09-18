@@ -1,5 +1,5 @@
-module.exports = {
-  sample: () => {
-    return 'sample';
-  },
-};
+// module.exports = {
+//   sample: () => {
+//     return 'sample';
+//   },
+// };
