@@ -1,23 +1,79 @@
 header {
-  background-image: linear-gradient(#333533, #333533, #333533, #202020);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+
+  /* background-image: linear-gradient(#333533, #333533, #333533, #202020);
   font-size: 35px;
   color: #d6d6d6;
   /* color: #FFD100;
   color: #B75D69; */
-  padding: 15px;
+  /* padding: 15px;
   padding-top: 25px;
   text-align: center;
   font-weight: bold;
+  width: 100vw; */
+}
+
+nav {
+  background-color: #20202000;
+}
+
+#nav-wrapper {
+  /* background-image: linear-gradient(#333533, #333533, #333533, #202020); */
+  /* font-size: 35px; */
+  background-color: rgba(255, 222, 173, 0);
+  color: #d6d6d6;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* color: #FFD100;
+  color: #B75D69; */
+  /* padding: 15px;
+  padding-top: 25px;
+  text-align: center;
+  font-weight: bold; */
   width: 100vw;
 }
 
 h1 {
-  margin:0;
-  
-  padding: 0;
+  background-image: linear-gradient(#333533, #333533, #333533, #202020);
+  font-size: 35px;
+  /* color: #d6d6d6; */
+  color: #FFD100;
+  /* color: #B75D69; */
+  padding-top: 17px;
+  padding-bottom: 14px;
+  text-align: center;
+  font-weight: bold;
+  width: 100vw;
+
+  /* background-color: aqua; */
+
+  /* position: relative; */
+  position: absolute;
+  top:-43px;
+  left: 0;
+  z-index: -1;
 }
 
 /* EVERYTHING BELOW THE HEADER */
+.container {
+  width: 100vw;
+  margin: 0;
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.sign-in_container {
+  width: 100vw;
+  margin: 0;
+  padding: 20px;
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
 body {
   background-color: #d6d6d6;
   background-size: 100%;
@@ -27,7 +83,7 @@ body {
   display:inline-flex;
   padding: 0;
   margin: 0;
-  width: 100vw;
+  width: 100%;
 
   /* background-color: #d6d6d6; */
 }
@@ -138,3 +194,84 @@ h3 {
 
 }
 
+
+
+/* SUB PAGE CSS STUFF ------------------------------ */
+#sub-pg-contents h2 {
+  color:#333533;
+  font-size: 18px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+#previewSub-div {
+  display: inline-flex;
+}
+
+#preview-emptyConfirmationIcon {
+  height: 40px;
+  padding: 7px;
+  opacity: .8;
+}
+
+#preview-fullConfirmationIcon {
+  height: 40px;
+  padding: 7px;
+  opacity: .8;
+}
+
+.iconDiv {
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+#emptyIconDiv {
+  background-color: #b81d32;
+}
+
+#fullIconDiv {
+  background-color: #5d87b7;
+}
+
+#fullDivGroup {
+  display: inline-flex;
+  /* display: none; */
+}
+
+#emptyDivGroup {
+  display: inline-flex;
+  /* display: none; */
+}
+
+.preview-ConfirmationText {
+  height: 100%;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 12px;
+  position: relative;
+  color:#202020;
+}
+
+.row {
+  margin:0;
+  padding:0;
+}
+
+.btn {
+  background-color: #B75D69;
+  /* color: #d6d6d6; */
+  color:#000000;
+}
+
+.nav-a {
+  color: #d6d6d6;
+}
+
+.input-field>label {
+  color:#333533b6;
+}

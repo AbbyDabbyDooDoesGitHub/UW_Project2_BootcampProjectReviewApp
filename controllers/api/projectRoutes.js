@@ -15,6 +15,17 @@ router.post("/", async (req, res) => {
   }
 });
 
+// GET SUB PAGE VIEW ROUTE
+router.get("/", (req, res) => {
+  try {
+    res.render("submission");
+    
+  } catch (err) {
+    res.status(500).json(err);
+    
+  }
+} )
+
 // DELETE a project
 router.delete("/:id", async (req, res) => {
   try {
