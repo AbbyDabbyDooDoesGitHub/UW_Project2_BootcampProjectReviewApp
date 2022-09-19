@@ -25,10 +25,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet"> -->
 
     <!-- LINK RESET AND MAIN STYLESHEET -->
-    {{!-- <link rel="stylesheet" href="/public/css/reset.css" />
-    <link rel="stylesheet" href="/public/css/style.css" /> --}}
-    <link rel="stylesheet" src="/public/css/reset.css" />
-    <link rel="stylesheet" src="/public/css/style.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
     <!-- LINK JQUERY SCRIPT -->
     <script
@@ -44,7 +42,23 @@
   </head>
 
   <body>
-{{>header}}
+    <header>
+      {{!-- <h1>Bootcamp Project Directory</h1> --}}
+      <nav>
+        <div class="nav-wrapper" id="nav-wrapper">
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+            {{#if logged_in}}
+              <li><button class="btn" id="logout">logout</button></li>
+              <li><a class="nav-a" href="/submission">Add a Project</a></li>
+            {{else}}
+              <li><a class="nav-a" href="/login">Login</a></li>
+            {{/if}}
+            <li> <a class="nav-a" href="/signup">Create an Account</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <main class="container container-fluid mt-5">
       {{{body}}}
