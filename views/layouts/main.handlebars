@@ -13,17 +13,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
 
-    <!-- LINK GOOGLE FONTS -->
-    <!-- <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    /> -->
-
-    <!-- EXAMPLE GOOGLE FONT LINK FOR FONT 'RAJDHANI' -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet"> -->
-
     <!-- LINK RESET AND MAIN STYLESHEET -->
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
@@ -46,15 +35,22 @@
       {{!-- <h1>Bootcamp Project Directory</h1> --}}
       <nav>
         <div class="nav-wrapper" id="nav-wrapper">
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <ul id="nav-mobile" class="left">
+
+          </ul>
+
+          <ul id="nav-mobile" class="right">
 
             {{#if logged_in}}
-              <li><button class="btn" id="logout">logout</button></li>
-              <li><a class="nav-a" href="/submission">Add a Project</a></li>
+              <li><a class="nav-a" href="/submission">Add Project</a></li>
+              <li> <a class="nav-a" href="/">Home</a></li>
+              <li><button class="btn" id="logout">Logout</button></li>
             {{else}}
+              <li><a class="nav-a" href="/signup">Create an Account</a></li>
               <li><a class="nav-a" href="/login">Login</a></li>
+              <li> <a class="nav-a" href="/">Home</a></li>
             {{/if}}
-            <li> <a class="nav-a" href="/signup">Create an Account</a></li>
+
           </ul>
         </div>
       </nav>

@@ -1,41 +1,25 @@
+/* NAVBAR STUFF ------------------------------- */
+/* HEADER FORMATTING */
 header {
   width: 100%;
   padding: 0;
   margin: 0;
-
-
-  /* background-image: linear-gradient(#333533, #333533, #333533, #202020);
-  font-size: 35px;
-  color: #d6d6d6;
-  /* color: #FFD100;
-  color: #B75D69; */
-  /* padding: 15px;
-  padding-top: 25px;
-  text-align: center;
-  font-weight: bold;
-  width: 100vw; */
 }
 
+/* MAKE NAV TRANSPARENT */
 nav {
   background-color: #20202000;
 }
 
+/* NAV WRAPPER FORMATTING */
 #nav-wrapper {
-  /* background-image: linear-gradient(#333533, #333533, #333533, #202020); */
-  /* font-size: 35px; */
-  background-color: rgba(255, 222, 173, 0);
   color: #d6d6d6;
   padding-left: 15px;
   padding-right: 15px;
-  /* color: #FFD100;
-  color: #B75D69; */
-  /* padding: 15px;
-  padding-top: 25px;
-  text-align: center;
-  font-weight: bold; */
   width: 100vw;
 }
 
+/* H1 IS USED FOR HEADERS ON PAGES */
 h1 {
   background-image: linear-gradient(#333533, #333533, #333533, #202020);
   font-size: 35px;
@@ -48,17 +32,29 @@ h1 {
   font-weight: bold;
   width: 100vw;
 
-  /* background-color: aqua; */
-
-  /* position: relative; */
   position: absolute;
   top:-43px;
   left: 0;
   z-index: -1;
 }
 
-/* EVERYTHING BELOW THE HEADER */
+/* CHANGE LINK COLOR */
+.nav-a {
+  color: #d6d6d6;
+}
+
+/* NAV LINK DIV PADDING */
+#nav-mobile {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+/* GENERAL ------------------------------------ */
+/* CONTAINER DIV */
 .container {
+  max-width: 100vw;
   width: 100vw;
   margin: 0;
   padding: 20px;
@@ -66,26 +62,142 @@ h1 {
   padding-bottom: 10px;
 }
 
+/* SIGN IN PAGE CONTAINER DIV */
 .sign-in_container {
-  width: 100vw;
+  max-width: 100%;
+  width: 100%;
   margin: 0;
   padding: 20px;
   padding-top: 35px;
   padding-bottom: 10px;
 }
 
+/* BACKGROUND COLOR */
 body {
   background-color: #d6d6d6;
   background-size: 100%;
- } 
+} 
 
+/* ROW CLASS FORMATTING */
+.row {
+  margin:0;
+  padding:0;
+}
+
+/* CHANGE BTN CLASS COLORS */
+.btn {
+  background-color: #B75D69;
+  color:#000000;
+}
+
+/* H2 FORMATTING */
+h2 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin: 0;
+  font-size: 25px;
+}
+
+/* H3 FORMATTING (USED FOR PROJ-CARDS) */
+h3 {
+  padding-top: 5px;
+  margin: 0;
+  font-size: 18px;
+  color: #202020;
+}
+
+/* LABELS FOR INPUT FEILDS */
+label {
+  color:#333533b6;
+}
+
+
+
+/* SUB PAGE SPECIFIC -------------------------- */
+/* CHANGE THE USER STORY TEXT */
+#sub-pg-contents h2 {
+  color:#333533;
+  font-size: 18px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+/* DIV FOR IMAGE SUBMISSION */
+#previewSub-div {
+  display: inline-flex;
+}
+
+/* EMPTY ICON */
+#preview-emptyConfirmationIcon {
+  height: 40px;
+  padding: 7px;
+  opacity: .8;
+}
+
+/* FULL ICON */
+#preview-fullConfirmationIcon {
+  height: 40px;
+  padding: 7px;
+  opacity: .8;
+}
+
+/* CIRCLE BEHIND ICON */
+.iconDiv {
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+/* CIRCLE ICON COLOR - EMPTY */
+#emptyIconDiv {
+  background-color: #b81d32;
+}
+
+/* CIRCLE ICON COLOR - FULL */
+#fullIconDiv {
+  background-color: #5d87b7;
+}
+
+/* DIV FOR FULL ICON AND TEXT */
+#fullDivGroup {
+  display: inline-flex;
+  /* display: none; */
+}
+
+/* DIV FOR EMPTY ICON AND TEXT */
+#emptyDivGroup {
+  display: inline-flex;
+  /* display: none; */
+}
+
+/* TEXT FORMATTING CLASS */
+.preview-ConfirmationText {
+  height: 100%;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 12px;
+  position: relative;
+  color:#202020;
+}
+
+/* LABELS FOR INPUT FEILDS */
+.input-field>label {
+  color:#333533b6;
+}
+
+
+
+/* HOMEPAGE (DIRECTORY) SPECIFIC -------------- */
+/* EVERYTHING BELOW THE HEADER */
 #main-display {
   display:inline-flex;
   padding: 0;
   margin: 0;
   width: 100%;
-
-  /* background-color: #d6d6d6; */
 }
 
 /* LEFT SIDE BELOW HEADER */
@@ -101,6 +213,7 @@ body {
   padding: 10px;
 }
 
+/* SIDE NAV DIV */
 #navigation-div {
   margin-top: 8px;
   color: #202020;
@@ -110,75 +223,75 @@ body {
   width:100%;
 }
 
+/* INDV LINKS IN SIDE NAV DIV */
 #navigation-links-div {
   display:contents;
   width:100%;
 }
 
+/* INDV NAV LINKS */
 .navigation-links {
   margin-bottom: 5px;
   padding: 5px;
   border-radius: 2px;
 }
 
+/* MAKE NAV LINKS HIGHLIGHT ON HOVER */
 .navigation-links:hover {
   background-color: #ffda37e6;
 }
 
+/* NAV LINKS TEXT */
 .navigation-links p {
   /* background-color: blue; */
   padding: 5px;
   font-size: 16px;
-  color: #333533;
+  color: #000000;
   width: 100%;
   /* width: 300px; */
 }
 
+/* H2 FORMATTING */
+#navigation-div h2 {
+  font-size: 20px;
+}
+
+
+/* PADDING FOR NAV LINKS */
 ul.navigation-links {
   margin:0;
   padding:0;
 }
 
-h2 {
-  padding-top: 5px;
-  padding-bottom: 10px;
-  margin: 0;
-  font-size: 25px;
-}
-
+/* CARD CONTENT, SCROLL */
 .card-content {
   overflow-y:scroll;
   /* border: 1px solid rgb(0, 0, 0, .2); */
 }
 
+/* ALL CARD CONTENT */
 .card.horizontal .card-stacked .card-content {
   margin:0;
   padding:5px;
   padding-left: 0;
 
   color: rgba(122, 122, 122);
-  
 }
 
-h3 {
-  padding-top: 5px;
-  margin: 0;
-  font-size: 18px;
-  color: #202020;
-}
-
+/* PADDING INSIDE CARDS */
 .card-stacked {
   padding: 10px;
 }
 
+/* LINKS IN CARDS */
 .card-action {
   margin:0;
   margin-top: 5px;
   padding:5px;
   padding-left: 0;
-
 }
 
+/* MORE CARD STUFF */
 .card .card-action {
   display:inline-flex;
   margin:0;
@@ -189,89 +302,7 @@ h3 {
   position: relative;
 }
 
+/* CARD LINK COLOR */
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
   color: #B75D69;
-
-}
-
-
-
-/* SUB PAGE CSS STUFF ------------------------------ */
-#sub-pg-contents h2 {
-  color:#333533;
-  font-size: 18px;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  margin-top: 10px;
-}
-
-#previewSub-div {
-  display: inline-flex;
-}
-
-#preview-emptyConfirmationIcon {
-  height: 40px;
-  padding: 7px;
-  opacity: .8;
-}
-
-#preview-fullConfirmationIcon {
-  height: 40px;
-  padding: 7px;
-  opacity: .8;
-}
-
-.iconDiv {
-  border-radius: 20px;
-  height: 40px;
-  width: 40px;
-  margin-left: 10px;
-  margin-right: 5px;
-}
-
-#emptyIconDiv {
-  background-color: #b81d32;
-}
-
-#fullIconDiv {
-  background-color: #5d87b7;
-}
-
-#fullDivGroup {
-  display: inline-flex;
-  /* display: none; */
-}
-
-#emptyDivGroup {
-  display: inline-flex;
-  /* display: none; */
-}
-
-.preview-ConfirmationText {
-  height: 100%;
-  font-style: italic;
-  font-size: 16px;
-  font-weight: bold;
-  padding-top: 12px;
-  position: relative;
-  color:#202020;
-}
-
-.row {
-  margin:0;
-  padding:0;
-}
-
-.btn {
-  background-color: #B75D69;
-  /* color: #d6d6d6; */
-  color:#000000;
-}
-
-.nav-a {
-  color: #d6d6d6;
-}
-
-.input-field>label {
-  color:#333533b6;
 }
