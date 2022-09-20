@@ -1,6 +1,6 @@
 # UW_Project2_BootcampProjectReviewApp
 
-<!-- ## Abby
+<!-- CHANGES ## Abby
 - html all project view - left side trouble shoot
 - parse out how to get screenshots uploaded
 
