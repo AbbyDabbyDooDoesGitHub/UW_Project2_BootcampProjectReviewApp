@@ -1,6 +1,6 @@
 # UW_Project2_BootcampProjectReviewApp
 
-## Abby
+<!-- ## Abby
 - html all project view - left side trouble shoot
 - parse out how to get screenshots uploaded
 
@@ -47,10 +47,10 @@
 * accept and respond to user input
 
 #### Req's assumed to be met
-* at least one new library, package, or technology --> MATERIALIZE FRAMEWORK
+* at least one new library, package, or technology MATERIALIZE FRAMEWORK
 * code formatting
 * README
-* polished UI
+* polished UI -->
 
 
 ## Overview

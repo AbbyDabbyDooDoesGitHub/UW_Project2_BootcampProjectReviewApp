@@ -80,42 +80,72 @@
 
             <div class="row" id="previewSub-div">
               <button class="btn waves-effect waves-light" id="upload_widget">
-                {{!-- <input src="/images/Icon_Empty.png" type="image" id="new=plant-img" alt="image of a plant with the text, upload a plant on it"> --}}
-                  <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript">
-                  </script>
+                <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript">
+                </script>
 
-                  <script type="text/javascript">
-                    var myWidget = cloudinary.createUploadWidget({
-                      cloudName: "dyxcfsiex",
-                      uploadPreset: "ml_default",
-                      cropping: true,
-                      croppingAspectRatio: 1,
-                      showSkipCropButton: false,
-                      sources: ["local", "camera"]
-                    }, (error, result) => {
-                      console.log(error, result) 
-                      if (!error && result && result.event === "success") {
-                        console.log('Done! Here is the image info: ', result.info);
-                        const previewTitle = document.querySelector('#new-preview-title').value
-                        const previewCaption = document.querySelector('#new-preview-caption').value
-                        const newPreview = {
-                          title: previewTitle,
-                          caption: previewCaption,
-                          file_name: result.info.url,
+                <script type="text/javascript">
+                  var myWidget = cloudinary.createUploadWidget({
+                    cloudName: "dyxcfsiex",
+                    uploadPreset: "ml_default",
+                    cropping: true,
+                    croppingAspectRatio: 1.75,
+                    showSkipCropButton: false,
+                    sources: [
+                      "local",
+                      "url",
+                      "google_drive",
+                      "dropbox"
+                    ],
+                    defaultSource: "local",
+                    styles: {
+                      palette: {
+                        window: "#333533",
+                        sourceBg: "#202020",
+                        windowBorder: "#D6D6D6",
+                        tabIcon: "#E46E7D",
+                        inactiveTabIcon: "#B75D69",
+                        menuIcons: "#E46E7D",
+                        link: "#FFDA37",
+                        action: "#FFDA37",
+                        inProgress: "#D6D6D6",
+                        complete: "#E46E7D",
+                        error: "#FF0028",
+                        textDark: "#202020",
+                        textLight: "#D6D6D6"
+                      },
+                      fonts: {
+                        default: null,
+                        "'Fira Sans', sans-serif": {
+                          url: "https://fonts.googleapis.com/css?family=Fira+Sans",
+                          active: true
                         }
-
-                        document.querySelector('#new-preview-title').value = ""
-                        document.querySelector('#new-preview-caption').value = ""
-                        
                       }
-                    })
-        
-                    document.getElementById("upload_widget").addEventListener("click", function () {
-                      myWidget.open();
-                    }, false);
-                  </script>
-                  Submit Preview Image
-                {{!-- </input> --}}
+                    }
+                  }, (error, result) => {
+                    console.log(error, result) 
+                    if (!error && result && result.event === "success") {
+                      console.log('Done! Here is the image info: ', result.info);
+                      const previewTitle = document.querySelector('#new-preview-title').value
+                      const previewCaption = document.querySelector('#new-preview-caption').value
+                      const newPreview = {
+                        title: previewTitle,
+                        caption: previewCaption,
+                        file_name: result.info.url,
+                      }
+                      const previewURL = result.info.url
+
+                      document.querySelector('#new-preview-title').value = ""
+                      document.querySelector('#new-preview-caption').value = ""
+                      
+                    }
+                  })
+      
+                  document.getElementById("upload_widget").addEventListener("click", function (e) {
+                    e.preventDefault();
+                    myWidget.open();
+                  }, false);
+                </script>
+                Submit Preview Image
               </button>
 
               <div id="emptyDivGroup">
