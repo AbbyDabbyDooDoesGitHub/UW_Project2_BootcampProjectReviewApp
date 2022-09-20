@@ -1,64 +1,10 @@
 # UW_Project2_BootcampProjectReviewApp
-
 <!-- mysql://victwz08esv36v99:lkgjj6y9z17z2xyh@cwe1u6tjijexv3r6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/yevh5t7vw9nv34sm -->
-
-<!-- CHANGES ## Abby
-- html all project view - left side trouble shoot
-- parse out how to get screenshots uploaded
-
-## Ryan
-- html project entry form
-
-## Gi
-- get seeds tested and make sure models are correct
-
-## Jocelyn
-- user log in / account sign up - css -ect
-
-
-### Project To-Do List
-- html bones 
-  - pages: project entry pages, log in page/create log in
-- log in required to enter submission, no log in needed to view
-  - auth/cookies
-- add in dynamic scripting for interactive buttons/etc
-- add db saving info w/ mySQL/Sequelize
-- craft models for project and user
-- find upload method for pics
-- connect all html docs w/eachother
-- connect data w/ html docs
-- add GET and POST routes
-  - GET a project or all projects
-  - POST add a project
-
-#### Once app is functioning
-- Update ReadME with SS, new info, app link, etc
-- double check code formatting for best practice layouts
-- ensure a clean UI experience
-
-
-#### Req's to meet
-* Node.js and Express.js to create a RESTful API
-* Handlebars.js as the template engine
-* MySQL and Sequelize ORM for the db
-* have GET and POST routes for retrieving and adding new data
-* folder structure meets MVC paradigm
-* Include authentication (express-session and cookies)
-* Protect API keys and sensitive information with environment variables
-* deploy using Heroku (with data)
-* accept and respond to user input
-
-#### Req's assumed to be met
-* at least one new library, package, or technology MATERIALIZE FRAMEWORK
-* code formatting
-* README
-* polished UI -->
-
 
 ## Overview
 Voting on the "Peoples Choice Awards" for the Bootcamp projects was a fun way to cap off the project, but seeing so many consecutive projects can blur projects together and make it hard to remember what each one was. It would be useful to be able to integrate basic descriptions, user stories, and screenshots into a thumbnail-like reference that makes voting easy to do without a key. The app will allow users to create/submit projects for reference. 
 
-Link to Web App: <!-- LINK TO DEPLOYMENT HERE -->
+Link to Web App: https://proj2-app.herokuapp.com/
 
 App Preview:
 <!-- Replace with path to screenshot   ![My Password Generator Screenshot](./Assets/MyPasswordGeneratorScreenShot.PNG "My Password Generator Screenshot") -->
@@ -100,7 +46,6 @@ You and your group will use everything you’ve learned over the past six module
 
 ### Presentation Requirements
 
-Use this [project presentation template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing) to address the following: 
 ```
 * Elevator pitch: a one minute description of your application
 * Concept: What is your user story? What was your motivation for development?
@@ -111,12 +56,17 @@ Use this [project presentation template](https://docs.google.com/presentation/d/
 ```
 
 ## Resources Used 
-
 <!-- ### Helpful References
 - [Full-Stack Blog on how to use API keys](https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys) -->
 
 ### Technology
 - [jQuery Library](https://jquery.com/)
+- Node.js
+- MySQL/Sequelize
+- Heroku
+- Cloudinary
+- Handlebars
+- Materialize 
 
 ### Media
 - Full icon: [Inbox by Gregor Cresnar from Noun Project](https://thenounproject.com/icon/inbox-4624894/)
