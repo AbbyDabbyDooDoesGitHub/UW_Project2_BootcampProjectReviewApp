@@ -7,11 +7,10 @@ Voting on the "Peoples Choice Awards" for the Bootcamp projects was a fun way to
 Link to Web App: https://proj2-app.herokuapp.com/
 
 App Preview:
-<!-- Replace with path to screenshot   ![My Password Generator Screenshot](./Assets/MyPasswordGeneratorScreenShot.PNG "My Password Generator Screenshot") -->
+![Project Directory Screenshot](./public/images/Project2_Screenshot.png "Project Directory Screenshot")
 
-## Notes
-
-<!-- Use this area to add personal notes on implementation, etc -->
+<!-- ## Notes
+We started with basic html mockups, then transitioned them into handlebars.  -->
 
 ## User Story
 
@@ -20,6 +19,12 @@ AS A bootcamp student with limited memory
 I WANT a voting app that has descriptions and imagery of the apps
 SO THAT my goldfish memory can be jogged when voting
 ```
+
+## Contributers 
+- [Abigail Douglas](https://github.com/AbbyDabbyDooDoesGitHub)
+- [Giwoong Nam](https://github.com/namgiwoong)
+- [Ryan Merced](https://github.com/ryanmerced)
+- [Jocelyn Gonzalez](https://github.com/danaejocey) 
 
 ## Acceptance Criteria
 
@@ -61,12 +66,13 @@ You and your group will use everything you’ve learned over the past six module
 
 ### Technology
 - [jQuery Library](https://jquery.com/)
-- Node.js
-- MySQL/Sequelize
-- Heroku
-- Cloudinary
-- Handlebars
-- Materialize 
+- [Node.js](https://nodejs.org/en/)
+- [Express.js](https://expressjs.com/)
+- [MySQL](https://www.mysql.com/)
+- [Heroku](https://www.heroku.com/)
+- [Cloudinary](https://cloudinary.com/)
+- [Handlebars](https://handlebarsjs.com/)
+- [Materialize](https://materializecss.com/)
 
 ### Media
 - Full icon: [Inbox by Gregor Cresnar from Noun Project](https://thenounproject.com/icon/inbox-4624894/)
