@@ -1,6 +1,8 @@
 # UW_Project2_BootcampProjectReviewApp
 
-<!-- ## Abby
+<!-- mysql://victwz08esv36v99:lkgjj6y9z17z2xyh@cwe1u6tjijexv3r6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/yevh5t7vw9nv34sm -->
+
+<!-- CHANGES ## Abby
 - html all project view - left side trouble shoot
 - parse out how to get screenshots uploaded
 
